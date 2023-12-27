@@ -2,4 +2,4 @@
 .mariadb
 .redis
 .idea
-storage
+.storage

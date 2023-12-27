@@ -3,4 +3,4 @@
 .idea
 docker.app.env
 docker.db.env
-storage
+.storage
