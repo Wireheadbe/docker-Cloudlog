@@ -29,6 +29,7 @@ if [ ! -f ${CONFIGFILE} ]; then
         sed -ri "s|\['directory'\] = '([^\']*)+'\;|\['directory'\] = '${WEB_DIRECTORY}'\;|g" ${CONFIGFILE}
 
         sed -ri "/\['callbook'\] =/ s/= .*/= \"${CALLBOOK}\"\;/" ${CONFIGFILE}
+        sed -ri "/\['use_fullname'\] =/ s/= .*/= ${USE_FULLNAME}\;/" ${CONFIGFILE}
         sed -ri "/\['hamqth_username'\] =/ s/= .*/= \"${HAMQTH_USERNAME}\"\;/" ${CONFIGFILE}
         sed -ri "/\['hamqth_password'\] =/ s/= .*/= \"${HAMQTH_PASSWORD}\"\;/" ${CONFIGFILE}
         sed -ri "/\['qrz_username'\] =/ s/= .*/= \"${QRZ_USERNAME}\"\;/" ${CONFIGFILE}
