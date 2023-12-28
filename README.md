@@ -22,4 +22,4 @@ The ".storage" directory will be made in the same folder automatically. It will 
 
 to start: `docker compose up -d`  
 to stop: `docker compose down`  
-to update: `docker compose down && docker image prune -a && docker compose up`
+to update: `docker compose down && docker image prune -a && docker compose up -d`
