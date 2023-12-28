@@ -20,6 +20,6 @@ Copy docker.db.sample.env to docker.db.env and change the passwords before runni
 
 The ".storage" directory will be made in the same folder automatically. It will be hidden.
 
-to start: `docker compose up -d`
-to stop: `docker compose down`
+to start: `docker compose up -d`  
+to stop: `docker compose down`  
 to update: `docker compose down && docker image prune -a && docker compose up`
