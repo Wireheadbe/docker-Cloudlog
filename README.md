@@ -1,9 +1,10 @@
 # Dockerfile for [Cloudlog](http://www.cloudlog.co.uk)
 
-Take note, the docker compose script is an example script for running this on localhost.
+Take note, the docker compose script is an example script.
 
-If you want to use this in production you need to use this behind an ssl enabled proxy (like [docker-letsencrypt-nginx-proxy-companion](https://github.com/JrCs/docker-letsencrypt-nginx-proxy-companion))
-and remove the port from the compose file.
+If you want to use this in production, you use this behind an ssl enabled proxy, like nginx, caddy, ha-proxy,...
+
+By default, the webpage will listen on port 8089 (using http), as this is a non-privileged port.
 
 ## running
 ### docker compose
